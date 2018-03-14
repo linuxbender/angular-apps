@@ -1,0 +1,168 @@
+<div class="page-header">
+    <h2>UI Bausteine</h2>
+    <p>Hier ist eine Auflistung von UI Bausteinen in der App</p>
+</div>
+<div>
+    <h2>Beispiel Reportbuilder</h2>
+    <p>
+        Das ganze ist ein Auflistung der möglichen Templates beim erstellen von Report Regeln.
+    </p>
+    <div>
+        <div class="bs-callout bs-callout-info">
+            <h4>1# String Template</h4>
+            <p>Das ist ein Test</p>
+        </div>
+        <form role="form">
+            <div class="form-group">
+                <label for="tableSpalteString">Spalte</label>
+                <select id="tableSpalteString" class="form-control">
+                    <option value="0^"></option>
+                    <option value="stringA">Spalte A</option>
+                    <option value="stringB">Spalte B</option>
+                    <option value="stringC">Spalte C</option>
+                </select>
+                <p class="help-block">Bitte wählen Sie eine Spalte</p>
+            </div>
+            <div class="form-group">
+                <label for="spaltenTypeString">Daten Type</label>
+                <p id="spaltenTypeString" class="form-control-static">String beinhaltet Zahlen, Buchstaben und Sonderzeichen.</p>
+                <p class="help-block">z.B hans.muster@mail1974.dev</p>
+            </div>
+            <div class="form-group">
+                <label for="ruleForString">Regelwerk</label>
+                <select id="ruleForString" class="form-control">
+                    <option value="rule1">Wert ist grösser als</option>
+                    <option value="rule2">Wert ist kleiner als</option>
+                    <option value="rule2">Wert ist gleich</option>
+                    <option value="rule3">Wert beinhaltet</option>
+                    <option value="rule4">Wert fängt an mit</option>
+                    <option value="rule5">Wert endet mit</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="filterString">Vergleichswert</label>
+                <input required type="text" class="form-control" id="filterString" placeholder="Wert">
+            </div>
+            <div class="form-group">
+                <label for="stringOption">Convert</label>
+                <div id="stringOption" class="btn-group">
+                    <button type="button" class="btn btn-default">Upper Case</button>
+                    <button type="button" class="btn btn-default">Lower Case</button>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary">
+                <span class="glyphicon glyphicon-hdd"></span>
+                Hinzufügen
+            </button>
+        </form>
+        <div class="bs-callout bs-callout-info">
+            <h4>2# Bool Template</h4>
+        </div>
+        <form role="form">
+            <div class="form-group">
+                <label for="tableSpalteString">Spalte</label>
+                <select id="tableSpalteString" class="form-control">
+                    <option value="0^"></option>
+                    <option value="stringA">Spalte A</option>
+                    <option value="stringB">Spalte B</option>
+                    <option value="stringC">Spalte C</option>
+                </select>
+                <p class="help-block">Bitte wählen Sie eine Spalte</p>
+            </div>
+            <div class="form-group">
+                <label for="spaltenTypeString">Daten Type</label>
+                <p id="spaltenTypeString" class="form-control-static">Boolen Wert können zwei Zustände haben: True oder Flase</p>
+                <p class="help-block">z.B Leistungs-Code ist True</p>
+            </div>
+            <div class="form-group">
+                <label for="ruleForString">Regelwerk</label>
+                <div id="stringOption" class="btn-group">
+                    <button type="button" class="btn btn-default">True</button>
+                    <button type="button" class="btn btn-default">False</button>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary">
+                <span class="glyphicon glyphicon-hdd"></span>
+                Hinzufügen
+            </button>
+        </form>
+        <div class="bs-callout bs-callout-info">
+            <h4>3# Zahlen Template</h4>
+        </div>
+        <form role="form">
+            <div class="form-group">
+                <label for="tableSpalteZahl">Spalte</label>
+                <select id="tableSpalteZahl" class="form-control">
+                    <option value="0^"></option>
+                    <option value="stringA">Spalte A</option>
+                    <option value="stringB">Spalte B</option>
+                    <option value="stringC">Spalte C</option>
+                </select>
+                <p class="help-block">Bitte wählen Sie eine Spalte</p>
+            </div>
+            <div class="form-group">
+                <label for="spaltenTypeZahl">Daten Type</label>
+                <p id="spaltenTypeZahl" class="form-control-static">
+                    Zahlen können aus Ganzzahlen und Reelenzahlen bestehen.
+                </p>
+                <p class="help-block">z.B 1, 2, 3 oder 0.2, 2.25</p>
+            </div>
+            <div class="form-group">
+                <label for="ruleForZahl">Regelwerk</label>
+                <select id="ruleForZahl" class="form-control">
+                    <option value="rule1">Wert ist grösser als</option>
+                    <option value="rule2">Wert ist kleiner als</option>
+                    <option value="rule3">Wert ist gleich</option>
+                    <option value="rule4">Wert ist zwischen</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="filterZahl">Vergleichswert</label>
+                <input required type="number" class="form-control" id="filterZahl" placeholder="Wert">
+            </div>
+            <button type="submit" class="btn btn-primary">
+                <span class="glyphicon glyphicon-hdd"></span>
+                Hinzufügen
+            </button>
+        </form>
+        <div class="bs-callout bs-callout-info">
+            <h4>4# Datum Template</h4>
+        </div>
+        <form role="form">
+            <div class="form-group">
+                <label for="tableSpalteDatum">Spalte</label>
+                <select id="tableSpalteDatum" class="form-control">
+                    <option value="0^"></option>
+                    <option value="stringA">Spalte A</option>
+                    <option value="stringB">Spalte B</option>
+                    <option value="stringC">Spalte C</option>
+                </select>
+                <p class="help-block">Bitte wählen Sie eine Spalte</p>
+            </div>
+            <div class="form-group">
+                <label for="spaltenTypeDatum">Daten Type</label>
+                <p id="spaltenTypeDatum" class="form-control-static">
+                    Datum Werte verwenden die Formatierung der Landessprache in Kurzform (Tag.Monat.Jahr).
+                </p>
+                <p class="help-block">z.B 01.01.1974</p>
+            </div>
+            <div class="form-group">
+                <label for="ruleForDatum">Regelwerk</label>
+                <select id="ruleForDatum" class="form-control">
+                    <option value="rule1">Wert ist grösser als</option>
+                    <option value="rule2">Wert ist kleiner als</option>
+                    <option value="rule3">Wert ist gleich</option>
+                    <option value="rule3">Wert ist zwischen</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="filterDatum">Vergleichswert</label>
+                <input required type="date" class="form-control" id="filterDatum" placeholder="Wert">
+            </div>
+            <button type="submit" class="btn btn-primary">
+                <span class="glyphicon glyphicon-hdd"></span>
+                Hinzufügen
+            </button>
+        </form>
+    </div>
+</div>

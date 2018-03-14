@@ -1,0 +1,42 @@
+@import '../_variables';
+@import '_callout';
+
+/*
+* component callout
+*/
+
+.bs-callout {
+    padding: 20px;
+    margin: 20px 0;
+    border: 1px solid $colorBorder;
+    border-left-width: 5px;
+    border-radius: $pixel03;
+    > h4 {
+        margin-top: 0;
+        margin-bottom: 5px;
+    }
+    > p:last-child {
+        margin-bottom: 0;
+    }
+    > code {
+        border-radius: $pixel03;
+    }
+    +.bs-callout {
+        margin-top: -5px;
+    }
+}
+
+.bs-callout-success {
+    @include callout-setColor($colorSuccess);
+}
+
+.bs-callout-danger {
+    @include callout-setColor($colorDanger);
+}
+
+.bs-callout-warning {
+    @include callout-setColor($colorWarning);
+}
+.bs-callout-info {
+    @include callout-setColor($colorInfo);
+}
